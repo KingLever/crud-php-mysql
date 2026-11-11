@@ -1,0 +1,46 @@
+:root {
+    --ink: #172536;
+    --muted: #6d7c8d;
+    --line: #e3eaf1;
+    --brand: #176b72;
+    --brand-dark: #12575d;
+    --canvas: #f4f7fb;
+}
+
+body.app-background {
+    color: var(--ink);
+    background: var(--canvas);
+    font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+.app-card {
+    border: 1px solid var(--line);
+    border-radius: 1rem;
+    background: #fff;
+    box-shadow: 0 14px 38px rgba(25, 49, 72, .07);
+}
+
+.home-card { max-width: 600px; width: 100%; }
+.brand-mark {
+    display: grid; place-items: center; width: 58px; height: 58px;
+    border-radius: 18px; color: var(--brand); background: #e8f4f3; font-size: 1.5rem;
+}
+.eyebrow { color: var(--brand); font-size: .72rem; font-weight: 700; letter-spacing: .12em; }
+.home-footer { border-top: 1px solid var(--line); color: var(--muted); font-size: .85rem; }
+.page-heading h1 { color: var(--ink); font-weight: 650; letter-spacing: -.025em; }
+.back-link { color: var(--muted); text-decoration: none; font-size: .9rem; }
+.back-link:hover { color: var(--brand); }
+.app-card-header { padding: 1.1rem 1.4rem; border-bottom: 1px solid var(--line); background: #fff; border-radius: 1rem 1rem 0 0 !important; }
+.form-label { color: #34475a; font-weight: 600; font-size: .92rem; }
+.form-control { min-height: 45px; border-color: #dbe4ec; border-radius: .65rem; }
+.form-control:focus { border-color: #70aaa7; box-shadow: 0 0 0 .2rem rgba(23, 107, 114, .13); }
+.btn { min-height: 42px; border-radius: .65rem; font-weight: 600; }
+.btn-primary, .btn-success { --bs-btn-bg: var(--brand); --bs-btn-border-color: var(--brand); --bs-btn-hover-bg: var(--brand-dark); --bs-btn-hover-border-color: var(--brand-dark); --bs-btn-active-bg: var(--brand-dark); --bs-btn-active-border-color: var(--brand-dark); }
+.search-panel { padding: 1rem; border: 1px solid var(--line); border-radius: .9rem; background: #fff; }
+.table-card { overflow: hidden; }
+.table thead th { padding: .9rem 1rem; color: #536579; font-size: .78rem; font-weight: 700; letter-spacing: .04em; text-transform: uppercase; white-space: nowrap; }
+.table tbody td { padding: .9rem 1rem; color: #34475a; }
+@media (max-width: 575.98px) {
+    .page-heading h1 { font-size: 1.65rem; }
+    .table thead th, .table tbody td { padding: .75rem; }
+}

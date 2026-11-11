@@ -1,0 +1,19 @@
+# Environment files and local credentials
+.env
+.env.*
+!.env.example
+config/database.local.php
+config/*local*
+
+# Logs and generated runtime files
+*.log
+logs/
+tmp/
+temp/
+
+# Dependencies and editor/OS files
+/vendor/
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
